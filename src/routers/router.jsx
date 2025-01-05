@@ -18,7 +18,6 @@ const getUserData = () => {
   const token = localStorage.getItem("authToken");
   const userData = JSON.parse(localStorage.getItem("userData"));
   const role = userData?.role;
-  console.log(role, "==========role=============", userData);
 
   return {
     role,
