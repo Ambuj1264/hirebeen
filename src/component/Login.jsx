@@ -29,7 +29,7 @@ const LoginPage = () => {
   const handleFormSubmit = async (values, setSubmitting) => {
     setSubmitting(true);
     try {
-      const response = await axios.post("https://hire-been.vercel.app/loginUser", {
+      const response = await axios.post("http://localhost:3000/loginUser", {
         email: values.email,
         password: values.password,
       });
@@ -46,7 +46,7 @@ const LoginPage = () => {
       }
     } catch (error) {
       console.error("Login error:", error);
-      failureToast("Something went wrong");
+      failureToast("Invalid email or password");
     } finally {
       setSubmitting(false);
     }
