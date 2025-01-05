@@ -18,7 +18,7 @@ const ProductView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/getProductById/${productId}`);
+        const response = await axios.get(`https://hire-been.vercel.app/getProductById/${productId}`);
         const results = response.data;
         console.log("API Response:", results);
         setProduct(results || {});

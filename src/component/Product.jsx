@@ -27,7 +27,7 @@ const Producth = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const result = await axios.get("http://localhost:3000/getAllProduct");
+        const result = await axios.get("https://hire-been.vercel.app/getAllProduct");
         console.log(result.data);
         setProducts(result.data);
       } catch (error) {

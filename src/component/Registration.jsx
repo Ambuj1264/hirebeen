@@ -37,7 +37,7 @@ const RegistrationPage = () => {
     setIsSubmitting(true);
     try {
   
-      const response = await axios.post(`http://localhost:3000/createUser`, ({
+      const response = await axios.post(`https://hire-been.vercel.app/createUser`, ({
         "name": values.name,
         "email": values.email,
         "password": values.password

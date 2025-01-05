@@ -35,7 +35,7 @@ const CreateProduct = () => {
   const handleSubmit = async(values) => {
     
     try {
-      const response = await axios.post("http://localhost:3000/auth/createProduct", {
+      const response = await axios.post("https://hire-been.vercel.app/auth/createProduct", {
         name: values.productName,
         price: values.price,
         description: values.description,

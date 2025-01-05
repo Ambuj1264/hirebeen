@@ -34,7 +34,7 @@ const SellerListing = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:3000/auth/userByRole/seller`, {
+      const response = await axios.get(`https://hire-been.vercel.app/auth/userByRole/seller`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
         },

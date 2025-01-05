@@ -29,7 +29,7 @@ const LoginPage = () => {
   const handleFormSubmit = async (values, setSubmitting) => {
     setSubmitting(true);
     try {
-      const response = await axios.post("http://localhost:3000/loginUser", {
+      const response = await axios.post("https://hire-been.vercel.app/loginUser", {
         email: values.email,
         password: values.password,
       });

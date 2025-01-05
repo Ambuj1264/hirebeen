@@ -32,7 +32,7 @@ const BuyerListing = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:3000/auth/userByRole/buyer', {
+      const response = await axios.get('https://hire-been.vercel.app/auth/userByRole/buyer', {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
